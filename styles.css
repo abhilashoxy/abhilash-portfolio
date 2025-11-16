@@ -14,7 +14,9 @@ body {
   scroll-behavior: smooth;
   background: #f5f7fa;
   color: var(--text-main);
+  overflow-x: hidden;
 }
+
 
 /* Navbar */
 .navbar {
@@ -139,8 +141,9 @@ body {
   border: 1px solid var(--border-soft);
   color: var(--text-main);
   background-color: #ffffff;
-  margin: 0.15rem;
+  white-space: nowrap;
 }
+
 
 /* Sections generic */
 section {
