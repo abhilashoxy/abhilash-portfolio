@@ -280,82 +280,50 @@ footer {
   margin-bottom: 0.8rem;
 }
 
-/* About page */
-.text-muted-small {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+/* ===== ABOUT PAGE REFINEMENTS ===== */
+
+.about-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.timeline {
-  border-left: 2px solid var(--primary-soft);
-  margin-left: 0.4rem;
-  padding-left: 1.2rem;
+.about-section-main {
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
-.timeline-item {
-  margin-bottom: 1.4rem;
-  position: relative;
+.about-row {
+  row-gap: 1.75rem;
 }
 
-.timeline-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--primary);
-  position: absolute;
-  left: -1.3rem;
-  top: 0.25rem;
-  box-shadow: 0 0 0 4px rgba(22, 199, 154, 0.25);
+/* Make top two cards slightly more prominent */
+.about-top-card {
+  padding: 1.6rem 1.6rem;
 }
 
-.timeline-title {
-  font-weight: 500;
-  margin-bottom: 0.15rem;
+/* Slightly softer background for Experience snapshot */
+.about-experience-card {
+  border-color: rgba(22, 199, 154, 0.4);
+  background: linear-gradient(to bottom right, #ffffff, #f4fffb);
 }
 
-.timeline-period {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 0.25rem;
+/* Bottom row cards */
+.about-bottom-card {
+  padding: 1.5rem 1.5rem;
 }
 
-.chip {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  background-color: #ffffff;
-  border: 1px solid var(--border-soft);
-  margin: 0 0.3rem 0.3rem 0;
+/* On very large screens, avoid feeling too stretched */
+@media (min-width: 1200px) {
+  .about-section-main {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 
-.chip-strong {
-  border-color: var(--primary);
-  background-color: var(--primary-soft);
-  color: var(--primary-dark);
-}
-
-.check-list li {
-  margin-bottom: 0.4rem;
-}
-
-/* Responsive tweaks */
+/* On mobile, give a bit more breathing room */
 @media (max-width: 767.98px) {
-  #hero {
-    text-align: center;
-  }
-
-  .hero-card {
-    margin-top: 2rem;
-  }
-
-  .navbar-brand {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .page-header h1 {
-    font-size: 2rem;
+  .about-section-main {
+    padding-top: 32px;
+    padding-bottom: 48px;
   }
 }
