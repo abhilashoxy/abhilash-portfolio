@@ -61,6 +61,7 @@ body {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
+   padding-bottom: 60px;
 }
 
 .hero-title {
@@ -196,21 +197,12 @@ section {
 }
 
 /* Contact section */
+.contact-section,
 #contact {
   background-color: #f0fdf4; /* very light green */
   color: var(--text-main);
-}
-
-#contact .form-control,
-#contact .form-control:focus {
-  background-color: #ffffff;
-  border-color: var(--border-soft);
-  color: var(--text-main);
-  box-shadow: none;
-}
-
-#contact .form-control::placeholder {
-  color: var(--text-muted);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .contact-card {
@@ -218,6 +210,80 @@ section {
   border: 1px solid var(--border-soft);
   background: #ffffff;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+#contact .form-control,
+#contact .form-select,
+.contact-section .form-control,
+.contact-section .form-select {
+  background-color: #ffffff;
+  border-color: var(--border-soft);
+  color: var(--text-main);
+  box-shadow: none;
+}
+
+#contact .form-control:focus,
+#contact .form-select:focus,
+.contact-section .form-control:focus,
+.contact-section .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(22, 199, 154, 0.2);
+}
+
+#contact .form-control::placeholder,
+.contact-section .form-control::placeholder {
+  color: var(--text-muted);
+}
+
+.contact-note {
+  color: #b91c1c; /* red-ish for warning line */
+}
+
+/* Right side text */
+.contact-side {
+  padding-top: 0.5rem;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-floating {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  z-index: 999;
+}
+
+.whatsapp-floating:hover {
+  background-color: #1ebe57;
+  color: #ffffff;
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .contact-section,
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .whatsapp-floating {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
 /* Footer */
@@ -314,6 +380,27 @@ footer {
 .about-bottom-card {
   padding: 1.5rem 1.5rem;
 }
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  z-index: 999;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-float:hover {
+  opacity: 0.9;
+}
+
 
 /* On very large screens, avoid feeling too stretched */
 @media (min-width: 1200px) {
@@ -329,4 +416,7 @@ footer {
     padding-top: 32px;
     padding-bottom: 48px;
   }
+}
+#contact.contact-section {
+  padding-top: 60px;
 }

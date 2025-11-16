@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Abhilash K | Full Stack .NET & Angular Developer</title>
+  <title>Abhilash K | Full-Stack .NET & Angular Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Full Stack .NET & Angular developer with 9+ years of experience building scalable web applications, APIs, and business solutions."
+    content="Full-Stack .NET & Angular developer with 9+ years experience building scalable business applications, APIs, and dashboards."
   />
 
   <!-- Bootstrap CSS -->
@@ -14,17 +14,20 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+
   <!-- Google Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
+
   <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-  <!-- Common styles -->
+
+  <!-- Site styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -54,7 +57,7 @@
             <a href="projects.html" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="aboutme.html" class="nav-link">About</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
             <a href="#contact" class="btn btn-sm btn-primary-custom">
@@ -70,36 +73,48 @@
   <section id="hero">
     <div class="container">
       <div class="row align-items-center g-5">
+        <!-- Left column: intro -->
         <div class="col-lg-7">
           <div class="pill">
-            <span class="hero-badge-dot"></span> Available for freelance & remote projects
+            <span class="hero-badge-dot"></span>
+            Available for freelance & remote projects
           </div>
-          <h1 class="hero-title">Full-Stack .NET & Angular Developer<br />for Business Solutions</h1>
+
+          <h1 class="hero-title">
+            Full-Stack .NET &amp; Angular<br />
+            Developer for Business Solutions
+          </h1>
+
           <p class="hero-subtitle mt-3">
             Hi, I’m <strong>Abhilash</strong>, a full-stack engineer from Bangalore with
-            <strong>9+ years</strong> experience in building scalable applications, APIs,
-            and dashboards using <strong>.NET, Angular, SQL</strong>.
+            <strong>9+ years</strong> experience in building scalable applications,
+            APIs, and dashboards using <strong>.NET, Angular, SQL</strong>.
           </p>
 
           <div class="mt-4 d-flex flex-wrap gap-3">
-            <a href="#contact" class="btn btn-primary-custom">📩 Let’s Work Together</a>
-            <a href="projects.html" class="btn btn-outline-custom">🔍 View Projects</a>
+            <a href="#contact" class="btn btn-primary-custom">
+              📩 Let’s Work Together
+            </a>
+            <a href="projects.html" class="btn btn-outline-custom">
+              🔍 View Projects
+            </a>
           </div>
 
-         <div class="mt-4">
-  <small class="text-secondary">Core tech I use:</small>
-  <div class="d-flex flex-wrap gap-2 mt-2">
-    <span class="stack-badge">.NET Core</span>
-    <span class="stack-badge">C#</span>
-    <span class="stack-badge">Angular</span>
-    <span class="stack-badge">SQL Server</span>
-    <span class="stack-badge">MySQL</span>
-    <span class="stack-badge">EF Core</span>
-    <span class="stack-badge">Docker</span>
-  </div>
-</div>
+          <div class="mt-4">
+            <small class="text-secondary">Core tech I use:</small>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="stack-badge">.NET Core</span>
+              <span class="stack-badge">C#</span>
+              <span class="stack-badge">Angular</span>
+              <span class="stack-badge">SQL Server</span>
+              <span class="stack-badge">MySQL</span>
+              <span class="stack-badge">EF Core</span>
+              <span class="stack-badge">Docker</span>
+            </div>
+          </div>
+        </div>
 
-
+        <!-- Right column: Project Snapshot card -->
         <div class="col-lg-5">
           <div class="hero-card">
             <h5 class="mb-3">Project Snapshot</h5>
@@ -118,34 +133,36 @@
     </div>
   </section>
 
-  <!-- You can later add mini “services / projects” sections here if you like -->
-
-  <!-- Contact -->
-  <section id="contact">
+  <!-- Contact / Project Request -->
+  <section id="contact" class="contact-section">
     <div class="container">
-      <div class="row g-4">
+      <div class="row g-4 align-items-start">
+        <!-- Form -->
         <div class="col-lg-7">
           <div class="contact-card p-4 p-md-5">
-            <h2 class="section-title">Let’s Build Something</h2>
-            <p class="section-subtitle">
-              Share your project details — I will respond with ideas, timelines & estimates.
+            <h2 class="section-title">Let’s Build Your Project</h2>
+            <p class="section-subtitle mb-4">
+              Share your requirements, and I will get back with ideas, timelines, and pricing.
             </p>
 
-            <form action="https://formspree.io/f/manadqoj" method="POST">
+            <form
+              action="https://formspree.io/f/manadqoj"
+              method="POST"
+            >
               <div class="mb-3">
-                <label for="name" class="form-label small">Name</label>
+                <label for="name" class="form-label small">Your Name</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
                   name="name"
-                  placeholder="Your name"
+                  placeholder="Your full name"
                   required
                 />
               </div>
 
               <div class="mb-3">
-                <label for="email" class="form-label small">Email</label>
+                <label for="email" class="form-label small">Your Email</label>
                 <input
                   type="email"
                   class="form-control"
@@ -157,66 +174,161 @@
               </div>
 
               <div class="mb-3">
-                <label for="message" class="form-label small">Project details</label>
+                <label for="projectType" class="form-label small">Project Type</label>
+                <select
+                  class="form-select"
+                  id="projectType"
+                  name="project_type"
+                  required
+                >
+                  <option value="" selected disabled>Select project type</option>
+                  <option>Full Web Application</option>
+                  <option>Admin Dashboard / Reporting</option>
+                  <option>REST API / Backend Service</option>
+                  <option>Bug Fixing / Enhancements</option>
+                  <option>Database / SQL Work</option>
+                  <option>Consulting / Code Review</option>
+                  <option>Other (describe below)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="requirements" class="form-label small">
+                  Project Requirements
+                </label>
                 <textarea
                   class="form-control"
-                  id="message"
-                  name="message"
+                  id="requirements"
+                  name="project_requirements"
                   rows="4"
-                  placeholder="Briefly describe what you want to build or fix..."
+                  placeholder="Briefly describe what you want to build, your goals, and key features..."
                   required
                 ></textarea>
               </div>
 
-              <input type="hidden" name="_subject" value="New enquiry from abhilashk.dev" />
+              <div class="mb-3">
+                <label for="budget" class="form-label small">
+                  Your Expected Budget (Optional)
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="budget"
+                  name="budget"
+                  placeholder="Example: 40,000 – 80,000 INR"
+                />
+              </div>
 
-              <button type="submit" class="btn btn-primary-custom w-100">
-                Send Message
+              <div class="mb-3">
+                <label for="timeline" class="form-label small">
+                  Timeline (Optional)
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="timeline"
+                  name="timeline"
+                  placeholder="Example: 3–4 weeks"
+                />
+              </div>
+
+              <p class="small contact-note mb-3">
+                * I am not hiring. I do not accept job applications or resumes through this form.
+                This form is only for project / freelance enquiries.
+              </p>
+
+              <!-- Submit + WhatsApp -->
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3">
+                Submit Project Request
               </button>
-            </form>
 
-            <p class="small mt-3 mb-0">
-              <i class="fa-solid fa-envelope me-2" style="color:#0f9f7b;"></i>
-              <strong>Email:</strong>
-              <a href="mailto:abhilashoxy@gmail.com"
-                 class="text-decoration-none"
-                 style="color:#0f9f7b; font-weight:500;">
-                abhilashoxy@gmail.com
+              <a
+                href="https://wa.me/919916790364?text=Hi%20Abhilash,%20I%20have%20a%20project%20requirement%20and%20would%20like%20to%20discuss%20it."
+                target="_blank"
+                class="btn btn-outline-custom w-100"
+              >
+                <i class="fa-brands fa-whatsapp me-2"></i>
+                Quick WhatsApp Contact
               </a>
-              <br />
-              <i class="fa-brands fa-whatsapp me-2 mt-2" style="color:#25D366;"></i>
-              <strong>WhatsApp:</strong>
-              <a href="https://wa.me/919916790364"
-                 class="text-decoration-none"
-                 style="color:#0f9f7b; font-weight:500;">
-                +91-9916790364
-              </a>
-            </p>
+
+              <!-- Optional custom subject for Formspree -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New project enquiry from abhilashk.dev"
+              />
+            </form>
           </div>
         </div>
 
-        <div class="col-lg-5">
+        <!-- Right side: why work with me -->
+        <div class="col-lg-5 contact-side">
           <h5 class="mb-3">Why work with me?</h5>
           <ul class="small">
-            <li>Clean, maintainable code</li>
-            <li>Clear communication</li>
-            <li>End-to-end ownership</li>
+            <li>Clean, maintainable, future-ready code</li>
+            <li>Clear communication and on-time delivery</li>
+            <li>9+ years of full-stack experience</li>
+            <li>Complete end-to-end project ownership</li>
             <li>Long-term support available</li>
           </ul>
+
+          <div class="mt-4 small">
+            <p class="mb-1">
+              <i class="fa-solid fa-envelope me-2" style="color:#0f9f7b;"></i>
+              <strong>Email:</strong>
+              <a
+                href="mailto:abhilashoxy@gmail.com"
+                class="text-decoration-none"
+                style="color:#0f9f7b; font-weight:500;"
+              >
+                abhilashoxy@gmail.com
+              </a>
+            </p>
+            <p class="mb-1">
+              <i class="fa-brands fa-whatsapp me-2" style="color:#25D366;"></i>
+              <strong>WhatsApp:</strong>
+              <a
+                href="https://wa.me/919916790364"
+                class="text-decoration-none"
+                style="color:#0f9f7b; font-weight:500;"
+                target="_blank"
+              >
+                +91-99167 90364
+              </a>
+            </p>
+            <p class="mb-0 text-muted">
+              Prefer a quick call? Send a WhatsApp message and we can schedule it.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Floating WhatsApp button -->
+  <a
+    href="https://wa.me/919916790364?text=Hi%20Abhilash,%20I%20have%20a%20project%20requirement."
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Chat with Abhilash on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      © <span id="year"></span> Abhilash K · Full Stack .NET & Angular Developer
+      © <span id="year"></span> Abhilash K · Full-Stack .NET & Angular Developer
     </div>
   </footer>
 
+  <!-- JS -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
